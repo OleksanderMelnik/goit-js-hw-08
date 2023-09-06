@@ -15,5 +15,19 @@ const onPlay = function (event) {
 
 player.on('timeupdate', throttle(onPlay, 1000));
 
-player.setCurrentTime(JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)) || 0);
+player.setCurrentTime(JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)) || 0)
+
+// .then(function(seconds) {
+  
+// }).catch(function(error) {
+//   switch (error.name) {
+//       case 'RangeError':
+          
+//           break;
+
+//       default:
+          
+//           break;
+//   }
+// }); ;
 
